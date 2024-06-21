@@ -1,7 +1,5 @@
 numpy
 tensorflow
 scikit-learn
-pickle
-PIL
-os
+Pillow
 streamlit
