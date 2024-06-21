@@ -10,18 +10,6 @@ from numpy.linalg import norm
 from sklearn.neighbors import NearestNeighbors
 from PIL import Image
 
-import requests
-
-# URL of the large file
-url = "https://www.dropbox.com/scl/fi/izj2dop08gwv4ew9wtu6p/embeddings.pkl?rlkey=3fki2st5dcf16jgeruf80mkrj&st=7jgpe4eo&dl=0"
-
-# Local path where the file will be saved
-local_path = "embeddings.pkl"
-
-if not os.path.exists(local_path):
-    response = requests.get(url)
-    with open(local_path, 'wb') as file:
-        file.write(response.content)
 
 #creation of web page
 st.title("Reverse Image Search")
